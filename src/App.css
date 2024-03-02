@@ -1,0 +1,90 @@
+@import "./colorPalette.css";
+
+:root {
+  --bright-red: #c5003f;
+  --beet-red: #7a1f3d;
+  --silver: #aaaaaa;
+  --cadet-gray: #a1a1a1;
+  --battleship-light-gray: #989898;
+  --battleship-gray: #8e8e8e;
+  --light-gray: #838383;
+  --gray: #777777;
+  --dim-gray: #696969;
+  --davy-gray: #5a5a5a;
+  --davy-gray-dark: #4a4a4a;
+  --jet-gray: #383838;
+  --eerie-black: #242424;
+  --night-black: #121212;
+  --black-1: #090909;
+  --black-2: #050505;
+  --black-3: #030303;
+  --giga-black: #000000;
+  --text-color: rgba(255, 255, 255, 0.87);
+
+  --pad-color: var(--jet-gray);
+  --border-color: var(--bright-red);
+  --background: var(--silver);
+
+  --transition: 0.3s ease-in-out all;
+}
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  text-align: center;
+}
+.main-div {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+}
+
+.drum-machine {
+  width: 45em;
+  height: 20em;
+  background-color: var(--background);
+  border: var(--border-color) 5px solid;
+  display: flex;
+  flex-flow: row;
+}
+.pad-container {
+  width: 50%;
+  display: flex;
+  flex-flow: row;
+  flex-wrap: wrap;
+  padding: 1.5rem;
+  gap: 10px;
+}
+.display-container {
+  width: 45%;
+  display: flex;
+  flex-flow: column;
+  padding: 1.5rem;
+  gap: 10px;
+}
+.drum-pad-big {
+  display: flex;
+  flex-flow: column;
+  width: 30%;
+  height: 30%;
+}
+.drum-pad {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0px 5px 10px 1px var(--night-black);
+  background-color: var(--pad-color);
+}
+.display {
+  width: 80%;
+  height: 3rem;
+  background-color: var(--eerie-black);
+  display: flex;
+}
+.display h4 {
+  margin: auto;
+}
